@@ -1,0 +1,10 @@
+body {
+  padding: 10px 20px;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: grey;*/
+}
+@media only screen and (max-width: 640px) {
+	body {
+	  padding: 5px 0px;
+	}
+}

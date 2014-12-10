@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	//-cartel para dispositivos pequeños
+	img(id="imagen_pantalla_cartel", src="/images/cartel_small_size.png")
+block scripts
+	script.
+		$('li#nav-cartel').addClass('active')

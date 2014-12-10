@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/misestilos.css')
+	body
+		h1= title
+		p LISTA DE USUARIOS:
+		ul
+			each user, i in userlist
+				li
+					a(href="mailto:#{user.email}")=user.username
+		
+

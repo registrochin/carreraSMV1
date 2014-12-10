@@ -1,0 +1,46 @@
+﻿doctype html
+html
+	head
+		title Carrera 2015 San Martín
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/misestilos.css')
+		link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+		link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:500' type='text/css')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+	body
+		header(class='navbar navbar-fixed-top bs-docs-nav navbar-default', id='top', role='banner')
+			#container.container
+				#navbar-header.navbar-header
+					button(class='navbar-toggle collapsed' type='button' data-toggle='collapse' data-target='.bs-navbar-collapse')
+						span(class='sr-only')
+							Toggle navigation
+						span(class='icon-bar')
+						span(class='icon-bar')
+						span(class='icon-bar')
+						span(class='icon-bar')
+					span(id='titulo-nav-bar', class='navbar-brand') #{title}
+				nav(class="collapse navbar-collapse bs-navbar-collapse" role="navigation")
+					ul(class='nav navbar-nav')
+						li#nav-principal
+							a(href='/')	Principal
+						li#nav-recorrido
+							a(href='/recorrido')	Recorrido
+						li#nav-inscripciones
+							a(href='/inscripciones')	Inscripciones
+						li#nav-resultados
+							a(href='/resultados')	Resultados
+						li#nav-cartel(class="hidden-md hidden-lg")
+							a(href='/cartel')	Cartel
+
+		#contenedor_ppal.container-fluid
+			h1	#{encabezado}
+			#columna_izquierda.col-md-8.col-lg-8
+				block content
+			#columna_derecha.hidden-xs.hidden-sm.col-sm-0.col-md-4.col-lg-4
+				img(id="imagen-cartel", src="/images/cartel_medium_size.png")
+				p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+		script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
+		block scripts

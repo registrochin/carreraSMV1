@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+	p	Las inscripciones se realizarán en la plaza del pueblo, el mismo día de la carrera de 10 a 12 de la mañana.
+	iframe(id="mapa", src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d479.27507609876966!2d-6.064372079427956!3d40.52209287654392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1418118643627", frameborder="0")
+
+block scripts
+	script.
+		$('li#nav-inscripciones').addClass('active')
+	//-script(src="http://maps.googleapis.com/maps/api/js?key=AIzaSyClfaIE5xpWRYlcA0iTVstfoABepTVk7pY&sensor=FALSE")
+	//-script(src="/javascripts/mismapas.js")
